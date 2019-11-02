@@ -163,8 +163,10 @@ function processContains(item, arr, cb) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
+function processDuplicateFree(arr, cb) {
   /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+  const deDupArr = [... new Set(arr)];
+  return cb(deDupArr);
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
