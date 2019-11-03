@@ -320,12 +320,12 @@ function counterMaker() {
  * counter() // should return 0
  * etc
 */
-function counterMakerWithLimit(/* CODE HERE */) {
+function counterMakerWithLimit(maxValue) {
   /* CODE HERE */
   let count = -1;
   return function counter() {
     ++count;
-    if (count > 3) {
+    if (count > maxValue) {
       count = 0;
     }
     return count;
